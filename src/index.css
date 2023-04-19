@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&family=Roboto:wght@100&family=Style+Script&display=swap');
+
+body {
+    background: rgb(0, 0, 0);
+    /* color: white; */
+    font-family: 'Lato', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1f799c;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer{
+    border-top-left-radius: 40px;
+}
+.h{
+    border: 1px solid violet;
+}
