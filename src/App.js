@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import Navbar from "./Components/Navbar";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useParams } from "react-router-dom";
 import Home from "./Components/Home";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
@@ -8,7 +8,6 @@ import Account from "./pages/Account";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import ProtectedRoute from "./Components/ProtectedRoute";
 import { app } from "./firebase";
-import Footer from "./Components/Footer";
 
 const AppState = createContext();
 const auth = getAuth(app);
@@ -60,7 +59,7 @@ function App() {
             }
           />
         </Routes>
-        <Footer />
+     
       </AuthContextProvider>
     </>
   );
