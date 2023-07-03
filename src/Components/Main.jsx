@@ -12,6 +12,7 @@ const Main = () => {
       setMovies(res.data.results);
     });
   }, []);
+  console.log(movies)
 
   const truncateString = (str, num) => {
     if (str?.length > num) {
@@ -38,7 +39,7 @@ const Main = () => {
             <button className="border bg-gray-300 text-black py-2 px-5 mr-5 rounded">
               Play
             </button>
-            <button className="border  text-whoite py-2 px-5 rounded">
+            <button className="border  text-white py-2 px-5 rounded">
               Watch later
             </button>
           </div>

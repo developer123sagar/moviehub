@@ -138,14 +138,14 @@ const SignUp = () => {
           username: form.username,
           password: hash,
           mobile: form.mobile,
-          savedShows:[]
+          savedShows: [],
         });
       } else {
         await setDoc(doc(db, "usersInformations", form.email), {
           username: form.username,
           password: hash,
           email: form.email,
-          savedShows:[]
+          savedShows: [],
         });
       }
     } catch (err) {

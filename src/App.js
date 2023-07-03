@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import Navbar from "./Components/Navbar";
-import { Route, Routes, useParams } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./Components/Home";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
